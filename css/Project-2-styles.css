@@ -73,7 +73,30 @@
     font-family:Montserrat;
   }
   
+  .blackboard{
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  .container {
   
+    display:flex;
+  
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .card{
+    width:100%;
+    background-color: #ffffff;
+    border-style: solid;
+    margin:8px;
+    border-radius: 5%;
+    padding: 10px;
+    
+  }
 
 
 
@@ -104,33 +127,20 @@
     .logo{
       order: 2;
     }
-    .container{
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        align-items: stretch;
-        
-      }
+    
+      
       .card{
-        display: flex;
-        flex-direction: column;
-        flex: 0 0 250px;
-        flex-grow: 1;
-        flex-basis: 46%;
-      }  
-      .card img {
-        width: 100%;
-        min-width: 295px;
-        margin-bottom: 50px;     
-      }
-      .card p{
-        width:auto;       
-        margin:auto;
-      }
+        flex: 1;
+        background-color: #ffffff;
+        border-style: solid;
+        margin:8px;
+        min-height: 250px;
+        min-width:350px;
+        border-radius: 5%;
+        padding: 20px;
+    }
          
-  
+  } 
   
    footer, .foot-nav{
     display: flex;
@@ -145,7 +155,7 @@
       margin: 5px;
     }
   
-  }
+  
   
   @media screen and (min-width: 1024px){
     
@@ -162,33 +172,11 @@
     .logo{
       order: 2;
     }
-    .container{
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-    
-     
-      
     .card{
-      
-      display: flex;
-      flex-direction: column;
-      flex: 0 0 250px;
-      flex-basis: 32%;
-      
-    }  
-    .card img {
-      width: 28vw;
-      min-width: 295px;
-      margin-bottom: 25px;
-    }
-    .card p{
-      width: auto;
-      margin-bottom: 10px;
- 
+      flex: 1;
+      width:90%;
+      padding:10px;
+      min-width: 250px;
     }
 
   }
