@@ -16,9 +16,7 @@
   h1{
     text-align: center;
   }
-  p{
-    padding: 15px;
-  }
+ 
   
   ul{
     list-style: none;
@@ -66,12 +64,12 @@
     margin-right: 50px;
   }
   
-  footer{
-    display: none;
-  }
+ 
   .skill p{
     font-family:Montserrat;
   }
+
+ 
   
   .blackboard{
     background-color: #f0f8ff;
@@ -99,12 +97,25 @@
     padding: 10px;
     
   }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    margin:15px;
+  }
 
+  .back-to-top{
+    text-decoration: none;
+  }
 
+  .bottom-link{
+    display: none;
+  }
 
   
   @media screen and (min-width:768px) {
-  
+  ul .bottom-link{
+    display: contents;
+  }
    
     .menu, .nav-menu{
       display: flex;
@@ -141,22 +152,30 @@
         border-radius: 5%;
         padding: 20px;
     }
+    .bottom-link{
+      display: block;
+    }
+    footer, .bottom-link{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+      .blinks{
+        align-items: center;
+      }
+      .blinks{
+        padding: 10px;
+        margin: 5px;
+      }
+      
+      .back-to-top{
+        display: none;
+      }
+
          
   } 
   
-   footer, .foot-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    }
-    .foot-nav{
-      align-items: center;
-    }
-    .last{
-      padding: 10px;
-      margin: 5px;
-    }
-  
+   
   
   
   @media screen and (min-width: 1024px){
