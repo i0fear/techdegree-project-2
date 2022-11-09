@@ -1,0 +1,194 @@
+
+*{
+    box-sizing: border-box;
+  }
+  html{
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  body{
+    font-family: 'Varela Round', sans-serif;
+      line-height: 1.2;
+   
+  }
+ 
+  h1{
+    text-align: center;
+  }
+  p{
+    padding: 15px;
+  }
+  
+  ul{
+    list-style: none;
+    margin:0;
+  }
+  li{
+    margin:0;
+  }
+  img{
+    max-width: 90%;
+  }
+  
+  /* base layout styles */
+  
+  .wrapper{
+    background-color: #fdfbfc;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .menu, .nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:5px;
+  }
+  
+  .nav-menu a{
+    text-align:center;
+    color: black;
+    display: block;
+    background-color:white;
+    text-decoration: none;
+    outline-style:ridge;
+    outline-color: white;
+    padding: 5px;
+  }
+  .profile{
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    
+  }
+  .profile p{
+    margin-right: 50px;
+  }
+  
+  footer{
+    display: none;
+  }
+  .skill p{
+    font-family:Montserrat;
+  }
+  
+  
+
+
+
+  
+  @media screen and (min-width:768px) {
+  
+   
+    .menu, .nav-menu{
+      display: flex;
+      padding:5px;
+      align-items: center;
+    }
+    .nav-menu{
+      flex-direction: row;
+    }
+    .nav-menu a{
+      text-align:center;
+      color: black;
+      background-color:white;
+      outline-style: none;
+      padding: 5px;
+      margin-left: 15px;
+    }
+    .profile{
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo{
+      order: 2;
+    }
+    .container{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: stretch;
+        
+      }
+      .card{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 250px;
+        flex-grow: 1;
+        flex-basis: 46%;
+      }  
+      .card img {
+        width: 100%;
+        min-width: 295px;
+        margin-bottom: 50px;     
+      }
+      .card p{
+        width:auto;       
+        margin:auto;
+      }
+         
+  
+  
+   footer, .foot-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .foot-nav{
+      align-items: center;
+    }
+    .last{
+      padding: 10px;
+      margin: 5px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px){
+    
+    .menu, .nav-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+   
+    .profile{
+      display: flex;
+    } 
+    
+    .logo{
+      order: 2;
+    }
+    .container{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    
+     
+      
+    .card{
+      
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 250px;
+      flex-basis: 32%;
+      
+    }  
+    .card img {
+      width: 28vw;
+      min-width: 295px;
+      margin-bottom: 25px;
+    }
+    .card p{
+      width: auto;
+      margin-bottom: 10px;
+ 
+    }
+
+  }
